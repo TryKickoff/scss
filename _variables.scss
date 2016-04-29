@@ -58,15 +58,18 @@ $line-height-headings         : 1.1;
  * There are no common breakpoints so these are just a suggestions
  * You'll need to define your own breakpoints to suit your design
  */
-$bp-narrow                    : 400;  // Set in px
-$bp-mid                       : 750;  // Set in px
-$bp-wide                      : 1000;  // Set in px
-$bp-huge                      : 1250; // Set in px
+
+// Add your breakpoints to this Sass map
+// Used in the suitcss-component-grid
+$breakpoints: (
+	narrow: 400px,
+	mid: 750px,
+	wide: 1000px,
+	huge: 1250px
+);
 
 // Special breakpoints
-$bp-single-col                : $bp-mid; // Break to single column (used in the grid)
-$bp-rwd-text                  : $bp-mid; // Reduce text size below this width
-
+$bp-rwd-text                  : bp(mid); // Reduce text size below this width
 
 /**
  * Path vars
