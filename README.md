@@ -15,6 +15,17 @@ npm install -S @kickoff/scss
 yarn add @kickoff/scss
 ```
 
+### Install the dependencies alongside the scss source
+This might be useful if you want to update some of the 3rd party Sass dependencies (like our utils or include-media) and not Kickoff's scss source.
+
+```sh
+npm install -S @kickoff/scss kickoff-utils.scss kickoff-grid.css kickoff-fluidVideo.css include-media normalize.css
+
+# or
+
+yarn add @kickoff/scss kickoff-utils.scss kickoff-grid.css kickoff-fluidVideo.css include-media normalize.css
+```
+
 ### Copy to your project directory
 Once installed, copy the `node_modules/@kickoff/scss` directory to your main project directory
 
