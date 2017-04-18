@@ -1,0 +1,4 @@
+* text=auto
+
+# Don't diff or textually merge source maps
+*.map   binary
