@@ -15,8 +15,16 @@
  */
 
 html {
-	font-size: $font-size-base-narrow-px;
+	font-size: ($font-size-base - 2) * 1px;
 	-webkit-text-size-adjust: 100%;
+	font-variant-ligatures: common-ligatures;
+	-webkit-font-smoothing: antialiased;
+
+	// This needs to come after -webkit-font-smoothing
+	// stylelint-disable-next-line declaration-block-properties-order
+	-moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
 
 	@include media('>mid') {
 		font-size: $font-size-base-px;
@@ -28,20 +36,6 @@ body {
 	@include ko-font-size(base);
 	line-height: $leading-base;
 	color: $color-text;
-
-	// Add ligatures
-	font-feature-settings: "liga", "dlig", "hist";
-	font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures;
-
-	// Two ways to smoothen type, they are disabled by default
-	// Enable only one of them if you need them
-	// 1.
-	// -webkit-font-smoothing: antialiased;
-	//    -moz-font-smoothing: antialiased;
-	// font-smooth:always;
-
-	// 2.
-	// opacity: 0.99;
 }
 
 /**
