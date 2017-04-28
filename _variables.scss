@@ -64,12 +64,13 @@ $font-family:     (
  * You'll need to define your own breakpoints to suit your design
  * Add your breakpoints to this Sass map
  * Used in the Kickoff grid
+ * Usage: ko-bp(100)
  */
 $breakpoints: (
-	narrow                  : 400px,
-	mid                     : 750px,
-	wide                    : 1000px,
-	huge                    : 1250px
+	s: 400px,
+	m: 750px,
+	l: 1000px,
+	xl: 1250px
 );
 
 
