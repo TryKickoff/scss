@@ -9,9 +9,6 @@
  * - Utilities
  *
  * Body font size, leadings etc have been set in _variables.scss
- *
- * See http://modularscale.com for
- *
  */
 
 html {
@@ -32,7 +29,7 @@ html {
 }
 
 body {
-	font-family: $font-family-base;
+	font-family: ko-font(base);
 	@include ko-font-size(base);
 	line-height: $leading-base;
 	color: $color-text;
@@ -42,8 +39,6 @@ body {
  * Paragraphs
  */
 p {
-	font-family: $font-family-base;
-	@include ko-font-size(base);
 	margin-top: 0;
 	margin-bottom: $baseline;
 
