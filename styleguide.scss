@@ -8,7 +8,7 @@
 @import "variables";
 @import "kickoff-grid";  // https://github.com/mrmartineau/kickoff-grid.css
 
-$styleguide-color-primary: $color-primary;
+$styleguide-color-primary: ko-color(primary);
 $styleguide-type: $font-family-system;
 
 @import "styleguide/swatch";
@@ -96,7 +96,7 @@ body {
 .sg-logo {
 	padding: 1em;
 	text-align: center;
-	color: $color-primary;
+	color: ko-color(primary);
 
 	&--dark {
 		background-color: #000;
@@ -249,7 +249,7 @@ code {
 }
 
 .sg-var-item {
-	color: $color-secondary;
+	color: ko-color(secondary);
 	margin-right: 10px;
 	display: inline-block;
 }

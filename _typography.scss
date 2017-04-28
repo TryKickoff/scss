@@ -23,11 +23,12 @@ html {
   text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 
-	@include media('>mid') {
-		font-size: $font-size-base-px;
+	@include media('>m') {
+		font-size: $font-size-base * 1px;
 	}
 }
 
+html,
 body {
 	font-family: ko-font(base);
 	@include ko-font-size(base);

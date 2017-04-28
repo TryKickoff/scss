@@ -16,7 +16,7 @@ $btn-borderRadius                : 5px;
 $btn-default-bgColor             : $gray;
 $btn-default-bgColor--highlight  : darken($btn-default-bgColor, 10%);
 
-$btn-primary-bgColor             : $color-link-default;
+$btn-primary-bgColor             : ko-color(link);
 $btn-primary-bgColor--highlight  : darken($btn-primary-bgColor, 10%);
 
 

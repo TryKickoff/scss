@@ -91,12 +91,12 @@ Kickoff does not enforce a mobile first approach to CSS, but it is encouraged an
 // The keywords below are from the $breakpoints map in _variables.scss
 
 // Equivalent to min-width query
-@include media(">mid") {
+@include media(">") {
 	width: 50%;
 }
 
 // Equivalent to min-width and max-width query
-@include media(">narrow", "<=wide") {
+@include media(">s", "<=xl") {
 	width: 50%;
 }
 
