@@ -25,13 +25,21 @@ $baseline: $line-height-base * 1px;
 
 $type-scale               : 1.25; // Major third
 
+/**
+ * Type sizes
+ * =================================
+ * Set using a modular scale by default.
+ * Values can be changed to px, rem etc if needed
+ *
+ * Usage: ko-type(s), ko-type(m)
+ */
 $type: (
-	micro                   : ko-ms(-2),
-	small                   : ko-ms(-1), // h5, h6
-	base                    : ko-ms(0),  // p, h4
-	mid                     : ko-ms(1),  // h3
-	large                   : ko-ms(2),  // h2
-	jumbo                   : ko-ms(3)   // h1
+	xs: ko-ms(-2),
+	s: ko-ms(-1), // h5, h6
+	m: ko-ms(0), // [default] p, h4
+	l: ko-ms(1), // h3
+	xl: ko-ms(2), // h2
+	xxl: ko-ms(3) // h1
 );
 
 // Useful to set here when bold webfonts come as 400 font-weight.
