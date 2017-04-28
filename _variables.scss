@@ -108,10 +108,14 @@ $img-path                 : "/assets/dist/img"; // Usage: background: url('#{$im
 /**
  * Z-index variables
  * =================================
+ *
+ * Usage: ko-zIndex(low)
  */
-$z-low                       : 10;
-$z-mid                       : 100;
-$z-high                      : 1000;
+$z-index: (
+	low: 10,
+	mid: 100,
+	high: 1000,
+)
 
 
 /**
