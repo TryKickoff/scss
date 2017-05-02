@@ -45,11 +45,11 @@ $type: (
  *
  * Usage: ko-font(system), ko-font(sans)
  */
-$font-family:     (
-	system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-	sans: "Helvetica Neue", Helvetica, Arial, sans-serif,
-	serif: Georgia, "Times New Roman", Times, serif,
-	mono: Menlo, Monaco, "Courier New", monospace
+$font-family: (
+	system: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans"',
+	sans: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+	serif: 'Georgia, "Times New Roman", Times, serif',
+	mono: 'Menlo, Monaco, "Courier New", monospace'
 );
 
 $font-family-base: ko-font(system);
@@ -108,8 +108,8 @@ $use-legacy-grid: true; // Disable this is you on’t want to output .no-flexbox
 $z-index: (
 	low: 10,
 	mid: 100,
-	high: 1000,
-)
+	high: 1000
+);
 
 
 /**

@@ -9,9 +9,9 @@
 @import "kickoff-grid";  // https://github.com/mrmartineau/kickoff-grid.css
 
 $styleguide-color-primary: ko-color(primary);
-$styleguide-type: $font-family-system;
+$styleguide-type: ko-font(system);
 
-@import "styleguide/swatch";
+@import "components/styleguide/swatch";
 
 /**
  * Styleguide styles
@@ -66,7 +66,7 @@ body {
 	color: #fff;
 	padding: 30px;
 	margin-top: 30px;
-	font-family: $font-family-mono;
+	font-family: ko-font(mono);
 	@include ko-font-size(12);
 
 	h1 {
@@ -141,7 +141,7 @@ code {
 			@include ko-font-size(micro);
 			display: block;
 			font-weight: normal;
-			font-family: $font-family-mono;
+			font-family: ko-font(mono);
 			opacity: 0.6;
 		}
 	}
@@ -175,17 +175,17 @@ code {
 	}
 }
 
-// h1.typeSpecimen::after { content: "Font stack: #{$font-family-headings}"; }
-// p.typeSpecimen::after  { content: "Font stack: #{$font-family-base}"; }
+// h1.typeSpecimen::after { content: "Font stack: #{ko-font(headings)}"; }
+// p.typeSpecimen::after  { content: "Font stack: #{ko-font(base)}"; }
 
 .sg-typeSpecimen--primary {
 	@include ko-font-size(30);
-	font-family: $font-family-base;
+	font-family: ko-font(base);
 }
 
 .sg-typeSpecimen--secondary {
 	@include ko-font-size(30);
-	font-family: $font-family-alt;
+	font-family: ko-font(alt);
 }
 
 .sg-typeSpecimen--giant {
@@ -217,17 +217,17 @@ code {
 
 .sg-hr {
 	height: 3px;
-	margin: ($baseline * 2) 0;
+	margin: ko-multiply($baseline, 2) 0;
 }
 
 .sg-hr--subtle {
 	height: 3px;
-	background-color: fade-out($hr-color, 0.6);
+	background-color: fade-out(ko-color(dark, light), 0.6);
 }
 
 @mixin ko-sgVar($var) {
 	line-height: 2;
-	font-family: $font-family-mono;
+	font-family: ko-font(mono);
 	border-bottom: 1px solid rgba(#000, 0.1);
 	@include ko-font-size(12);
 
@@ -237,7 +237,7 @@ code {
 		display: block;
 		user-select: none;
 
-		@include media('>mid') {
+		@include media('>m') {
 			width: 20%;
 			display: inline-block;
 		}
@@ -255,7 +255,7 @@ code {
 }
 
 .sg-var--baseFontSize {
-	@include ko-sgVar($font-size-base);
+	@include ko-sgVar(ko-font(m));
 }
 
 .sg-var--leadingBase {
@@ -267,19 +267,19 @@ code {
 }
 
 .sg-var--fontFamilyMono {
-	@include ko-sgVar($font-family-mono);
+	@include ko-sgVar(ko-font(mono));
 }
 
 .sg-var--fontFamilySystem {
-	@include ko-sgVar($font-family-system);
+	@include ko-sgVar(ko-font(system));
 }
 
 .sg-var--fontFamilySans {
-	@include ko-sgVar($font-family-sans);
+	@include ko-sgVar(ko-font(sans));
 }
 
 .sg-var--fontFamilySerif {
-	@include ko-sgVar($font-family-serif);
+	@include ko-sgVar(ko-font(serif));
 }
 
 .sg-var--breakpoints {

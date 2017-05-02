@@ -2,7 +2,7 @@
  * Colour swatches
  */
 .sg-swatch {
-	border: 1px solid rgba(color(dark), 0.2);
+	border: 1px solid rgba(ko-color(dark), 0.2);
 	border-radius: 4px;
 	padding: 15px;
 	margin: 15px;
@@ -11,7 +11,7 @@
 	cursor: pointer;
 
 	&:hover {
-		border-color: rgba(color(dark), 0.6);
+		border-color: rgba(ko-color(dark), 0.6);
 	}
 
 	&.is-active {
@@ -43,7 +43,7 @@
 
 .sg-swatch-var {
 	width: 100%;
-	font-family: $font-family-mono;
+	font-family: ko-font(mono);
 	margin-top: 15px;
 	font-size: 12px;
 	display: block;
@@ -77,18 +77,15 @@
 .sg-color-secondary {
 	@include ko-swatch(ko-color(secondary));
 }
-.sg-color-highlight {
-	@include ko-swatch(ko-color(highlight));
-}
 .sg-color-text {
-	@include ko-swatch(ko-color(text), ko-color(bg));
+	@include ko-swatch(ko-color(text), ko-color(background));
 }
 .sg-color-background {
-	@include ko-swatch(ko-color(bg));
+	@include ko-swatch(ko-color(background));
 }
 .sg-color-border {
-	@include ko-swatch($color-border);
+	@include ko-swatch(ko-color(border));
 }
 .sg-color-link {
-	@include ko-swatch($color-link-default);
+	@include ko-swatch(ko-color(link));
 }

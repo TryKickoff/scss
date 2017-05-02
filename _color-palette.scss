@@ -6,7 +6,6 @@
  * - Common colors
  * - Links
  * - Text selection
- * - <hr>
  * - Any others..
  */
 
@@ -25,19 +24,19 @@ $color-palette: (
 
   primary: (
     base: #181830,
-    light: lighten(ko-color(primary), 10%),
-    dark: darken(ko-color(primary), 10%)
+    light: #292952,
+    dark: #0d0d19
   ),
 
   secondary: (
     base: #fe7c08,
-    light: lighten(ko-color(secondary), 10%),
-    dark: darken(ko-color(secondary), 10%)
+    light: #fea04c,
+    dark: #d26401
   ),
 
 	text: (
-		base: ko-color(dark),
-		light: lighten(ko-color(text), 20%)
+		base: #212B35,
+		light: #454F5B
 	),
 
 	background: (
@@ -49,9 +48,9 @@ $color-palette: (
 	),
 
 	link: (
-		base: #444,
-		over: darken(ko-color(link), 10%)
-	),
+		base: #fe7c08,
+		over: #fea04c
+	)
 );
 
 // Generic colors
@@ -68,8 +67,8 @@ $color-kickoff-blue: #181830;
 $color-kickoff-orange: #fe7c08;
 
 // Text Selection
-$color-selection: color(bright);
-$color-selection-bg: color(primary);
+$color-selection: ko-color(bright);
+$color-selection-bg: ko-color(primary);
 
 // 3rd party brand colors - find more at brandcolors.net
 $color-twitter: #55acee;

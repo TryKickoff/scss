@@ -33,7 +33,7 @@ body {
 	font-family: ko-font(base);
 	@include ko-font-size(base);
 	line-height: $leading-base;
-	color: $color-text;
+	color: ko-color(text);
 }
 
 /**
@@ -216,7 +216,7 @@ sup {
 
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
-samp { font-family: $font-family-mono; }
+samp { font-family: ko-font(mono); }
 
 
 /**
@@ -239,10 +239,10 @@ samp { font-family: $font-family-mono; }
 
 // Horizontal rules
 hr {
-	margin: ($baseline) 0;
+	margin: $baseline 0;
 	border: 0;
 	height: 1px;
-	background-color: $hr-color;
+	background-color: ko-color(dark);
 }
 
 // https://justmarkup.com/log/2015/07/dealing-with-long-words-in-css/
