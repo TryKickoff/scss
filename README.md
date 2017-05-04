@@ -1,4 +1,6 @@
 # Kickoff Sass (.scss) source
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/TryKickoff/scss.svg)](https://greenkeeper.io/)
 > Find out more at http://trykickoff.com/learn/css.html
 
 ### The purpose of this repo is to separate the main CSS framework from the main kickoff repo. This is so that the CSS can be included into any project regardless of project type i.e. a React/Angular/Vue/Drupal/etc/etc project.
